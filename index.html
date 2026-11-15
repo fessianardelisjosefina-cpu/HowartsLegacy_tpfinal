@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANIMAGO – El ritual de transformación</title>
+<meta name="description" content="ANIMAGO – El ritual de transformación. Expansión transmedia del universo de Hogwarts Legacy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Selector de cursor: los radios viven fuera de las pantallas, por eso la elección se conserva al navegar -->
+<input class="cur" type="radio" name="cursor" id="c1" checked aria-label="Cursor: varita mágica">
+<input class="cur" type="radio" name="cursor" id="c2" aria-label="Cursor: hoja de mandrágora">
+<input class="cur" type="radio" name="cursor" id="c3" aria-label="Cursor: luna">
+<input class="cur" type="radio" name="cursor" id="c4" aria-label="Cursor: estrella mágica">
+<input class="cur" type="radio" name="cursor" id="c5" aria-label="Cursor: criatura mágica">
+
+<nav aria-label="Navegación principal">
+  <a href="#portada">Portada</a>
+  <a href="#prologo">Prólogo</a>
+  <a href="#cursor">Cursor</a>
+  <a href="#experiencia">Experiencia</a>
+  <a href="#creditos">Créditos</a>
+</nav>
+
+<main>
+
+  <!-- PANTALLA 1: PORTADA -->
+  <section class="pantalla" id="portada" aria-labelledby="t-portada">
+    <div class="centro">
+      <div class="sello" aria-hidden="true"><span>✦</span></div>
+      <h1 id="t-portada">ANIMAGO</h1>
+      <p class="sub">El ritual de transformación</p>
+      <p class="frase">Algunos secretos solo se revelan a quienes se atreven a cambiar de forma.</p>
+      <a class="btn" href="#prologo">COMENZAR</a>
+    </div>
+  </section>
+
+  <!-- PANTALLA 2: PRÓLOGO -->
+  <section class="pantalla" id="prologo" aria-labelledby="t-prologo">
+    <article class="pagina manuscrito">
+      <p class="runa" aria-hidden="true">❦ ☾ ❦</p>
+      <h2 id="t-prologo">Prólogo</h2>
+      <p class="cap">Hogwarts duerme bajo un cielo sin luna. Entre sus muros, un estudiante recorre los pasillos fuera de hora y descubre algo que nadie parece querer ver: las criaturas mágicas se esconden, tiemblan y, una a una, desaparecen de sus refugios.</p>
+      <p>Lo que comienza como una inquietud se vuelve promesa. Si el castillo calla, alguien tendrá que escuchar lo que el bosque ya no se atreve a decir.</p>
+      <p>Para protegerlas, estará dispuesto a cruzar límites que ningún libro de texto menciona.</p>
+      <p class="runa" aria-hidden="true">✦</p>
+      <div class="acciones">
+        <a class="btn claro" href="#portada">Volver</a>
+        <a class="btn claro" href="#cursor">Continuar</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- PANTALLA 3: SELECCIÓN DE CURSOR MÁGICO -->
+  <section class="pantalla" id="cursor" aria-labelledby="t-cursor">
+    <div class="pagina oscura">
+      <p class="runa" aria-hidden="true">✦ ☾ ✦</p>
+      <h2 id="t-cursor">Elige tu cursor mágico</h2>
+      <p class="aviso">Será tu guía durante todo el recorrido. Puedes cambiarlo cuando quieras volviendo a esta pantalla.</p>
+      <div class="opciones" role="group" aria-label="Opciones de cursor">
+        <label class="op" for="c1"><span class="ico i1"></span><span class="nom">Varita mágica</span></label>
+        <label class="op" for="c2"><span class="ico i2"></span><span class="nom">Hoja de mandrágora</span></label>
+        <label class="op" for="c3"><span class="ico i3"></span><span class="nom">Luna</span></label>
+        <label class="op" for="c4"><span class="ico i4"></span><span class="nom">Estrella mágica</span></label>
+        <label class="op" for="c5"><span class="ico i5"></span><span class="nom">Criatura mágica</span></label>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="#prologo">Volver</a>
+        <a class="btn" href="#experiencia">Continuar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 4: EXPERIENCIA INTERACTIVA H5P -->
+  <section class="pantalla exp" id="experiencia" aria-labelledby="t-exp">
+    <div class="portal">
+      <h2 id="t-exp">El ritual</h2>
+      <div class="marco">
+<iframe src="https://tpfinalnarrativashowartslegacy.h5p.com/content/1293059068201624328/embed" aria-label="ANIMAGO – El ritual de transformación" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+<script src="https://tpfinalnarrativashowartslegacy.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="#cursor">Volver</a>
+        <a class="btn" href="#creditos">Créditos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 5: CRÉDITOS -->
+  <section class="pantalla" id="creditos" aria-labelledby="t-cred">
+    <div class="pagina oscura ancha">
+      <p class="runa" aria-hidden="true">❦ ✦ ❦</p>
+      <h2 id="t-cred">Créditos</h2>
+
+      <dl class="datos">
+        <div><dt>Proyecto</dt><dd>ANIMAGO – El ritual de transformación</dd></div>
+        <div><dt>Institución</dt><dd>Universidad Nacional de Villa María</dd></div>
+        <div><dt>Carrera</dt><dd>Diseño y Producción Audiovisual</dd></div>
+        <div><dt>Asignatura</dt><dd>Narrativas Audiovisuales Interactivas</dd></div>
+        <div><dt>Docentes</dt><dd>Lila Pagola y Luján Ailen Martinez</dd></div>
+        <div><dt>Año</dt><dd>2026</dd></div>
+      </dl>
+
+      <p class="nota">El diseño UI y UX fue realizado de manera conjunta por todas las integrantes del equipo.</p>
+
+      <div class="equipo">
+        <article class="firma">
+          <h3>Valentina Accastello<br>Chabela Juárez Vizueta</h3>
+          <ul>
+            <li><strong>Investigación:</strong> recopilación y organización de información sobre el videojuego <em>Hogwarts Legacy</em>, su universo narrativo, personajes, historia, ambientación, criaturas mágicas, elementos del mundo mágico y demás aspectos relevantes para comprender el universo de partida y desarrollar la propuesta transmedia.</li>
+            <li><strong>Diseño UI:</strong> desarrollo de la interfaz visual de la página web.</li>
+            <li><strong>Diseño UX:</strong> organización de la navegación y disposición de los elementos para facilitar la interacción del usuario.</li>
+          </ul>
+        </article>
+
+        <article class="firma">
+          <h3>Josephine Annette Ferreyra<br>Yolanda Yaquelin Da Silvera</h3>
+          <ul>
+            <li><strong>Diseño gráfico y recursos visuales:</strong> generación y desarrollo de imágenes para la identidad del proyecto.</li>
+            <li><strong>Producción audiovisual:</strong> creación de videos y recursos audiovisuales.</li>
+            <li><strong>Diseño sonoro:</strong> búsqueda de recursos sonoros para acompañar la experiencia.</li>
+            <li><strong>Diseño UI:</strong> desarrollo de la interfaz visual de la página web.</li>
+            <li><strong>Diseño UX:</strong> organización de la navegación y disposición de los elementos para facilitar la interacción del usuario.</li>
+          </ul>
+        </article>
+
+        <article class="firma">
+          <h3>Patricia Andrea Gutierrez Berroteran</h3>
+          <ul>
+            <li><strong>Comunicación y redes sociales:</strong> desarrollo y gestión de los contenidos destinados a las redes sociales del proyecto.</li>
+            <li><strong>Diseño UI:</strong> desarrollo de la interfaz visual de la página web.</li>
+            <li><strong>Diseño UX:</strong> organización de la navegación y disposición de los elementos para facilitar la interacción del usuario.</li>
+          </ul>
+        </article>
+
+        <article class="firma">
+          <h3>María Josefina Fessia Nardelis</h3>
+          <ul>
+            <li><strong>Diseño UI:</strong> desarrollo de la interfaz visual de la página web.</li>
+            <li><strong>Diseño UX:</strong> organización de la navegación y disposición de los elementos para facilitar la interacción del usuario.</li>
+            <li><strong>Programación y maquetado web:</strong> desarrollo de la página mediante HTML y CSS.</li>
+            <li><strong>Adaptación transmedia interactiva:</strong> creación y configuración de la experiencia en H5P Branching Scenario.</li>
+            <li><strong>Integración de recursos audiovisuales:</strong> incorporación de materiales audiovisuales en la experiencia interactiva.</li>
+            <li><strong>Publicación web:</strong> configuración y publicación de la actividad en H5P.com.</li>
+          </ul>
+        </article>
+      </div>
+
+      <footer class="licencia">
+        <p>Este proyecto se distribuye bajo la licencia <strong>Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</strong>.</p>
+        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="license noopener">Ver la licencia oficial</a></p>
+      </footer>
+
+      <div class="acciones">
+        <a class="btn" href="#experiencia">Volver a la experiencia</a>
+        <a class="btn" href="#portada">Ir a la portada</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Música ambiental: fuera de las pantallas para que persista y no se reinicie al navegar -->
+<aside class="musica" aria-label="Música ambiental">
+  <span class="musica-sello" aria-hidden="true">☾</span>
+  <div class="barra">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HZ3aNv8_-ZE?si=BSV1WM79FiWZrZTb&amp;autoplay=1&amp;loop=1&amp;playlist=HZ3aNv8_-ZE&amp;controls=1&amp;playsinline=1&amp;rel=0" title="Música ambiental de ANIMAGO (YouTube): barra de reproducción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</aside>
+
+</body>
+</html>
